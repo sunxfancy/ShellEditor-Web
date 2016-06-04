@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Shell Editor</title>
+	<meta name="viewport" content="user-scalable=no,initial-scale = 1.2,maximum-scale = 1.2">
+	<link rel="stylesheet" type="text/css" href="css/topcoat-desktop-dark.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.flowchart.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="dark">
+	<nav>
+		<div id="logo">Shell Editor</div>
+
+		<div id="toolbar">
+			<button class="topcoat-icon-button--large--quiet">
+			  <span class="ui-icon ui-icon-document"></span>
+			</button>
+			<button class="topcoat-icon-button--large--quiet">
+			  <span class="ui-icon ui-icon-folder-open"></span>
+			</button>
+			<button class="topcoat-icon-button--large--quiet">
+			  <span class="ui-icon ui-icon-disk"></span>
+			</button>
+			<button class="topcoat-icon-button--large--quiet">
+			  <span class="ui-icon ui-icon-arrowthick-1-w"></span>
+			</button>
+			<button class="topcoat-icon-button--large--quiet">
+			  <span class="ui-icon ui-icon-arrowthick-1-e"></span>
+			</button>
+			<button class="topcoat-icon-button--large--quiet">
+			  <span class="ui-icon ui-icon-arrow-4-diag"></span>
+			</button>
+		</div>
+
+		<a href="http://github.com/"><img id="github-logo" src="img/github.png"></a>
+	</nav>
+	<div id="ctn">
+		<div id="ctrls">
+			<input type="search" value="" placeholder="search" class="topcoat-search-input--large">
+			<div id="tabs">
+			  <ul>
+			    <li><a href="#tabs-1">Base</a></li>
+			    <li><a href="#tabs-2">Command</a></li>
+			    <li><a href="#tabs-3">User</a></li>
+			  </ul>
+			  <div id="tabs-1">
+				  <div class="part"></div>
+			  </div>
+			  <div id="tabs-2">
+				  <div class="part"></div>
+			  </div>
+			  <div id="tabs-3">
+				  <div class="part"></div>
+			  </div>
+			</div>
+		</div>
+		<div id='container'>
+			<div id="canvas">
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-2.2.4.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.flowchart.js"></script>
+	<script type="text/javascript" src="js/model.js"></script>
+	<script type="text/javascript" src="js/command.js"></script>
+	<script type="text/javascript" src="js/shelleditor.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#tabs").tabs();
+			ShellEditor.init();
+		});
+	</script>
+</body>
+</html>

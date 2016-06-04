@@ -1,0 +1,99 @@
+nav {
+	width: 100%;
+	height: 7vh;
+	background-color: white;
+	display: flex;
+	flex-flow: row;
+}
+
+#logo {
+	padding-top: 3px;
+	width: 260px;
+	height: 100%;
+	text-align: center;
+	font-size: 36px;
+	text-shadow: 0 0 20px #33FFFF;
+}
+
+#toolbar {
+	margin-top: 25px;
+	padding-left: 30px;
+	width: 600px;
+	height: 100%;
+	margin-bottom: 0px;
+	background-color: #4b4d4e;
+	border-top-left-radius:2em;
+	border-top-right-radius:2em;
+}
+
+#ctn {
+	display: flex;
+	flex-flow: row;
+	height: 93vh;
+	width: 100%;
+}
+
+#ctrls {
+	width: 240px;
+	padding: 10px;
+	background-color: #3e3e3e;
+	text-align: center;
+}
+
+#container {
+	flex: 1;
+	height: 100%;
+}
+
+#canvas {
+	width: 100%;
+	height: 100%;
+}
+
+#tabs {
+	margin-top: 10px;
+	font-size: 10px;
+	text-align: left;
+}
+
+#github-logo {
+	width: 50px;
+	height: 50px;
+}
+
+.part {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.part button{
+	font-size: 18px;
+	margin: 5px;
+}
+
+.tool-icon {
+	text-align: center;
+	width: 48px;
+	margin: 20px 10px 10px 10px;
+}
+
+.tool-icon img {
+	width: 48px;
+	height: 48px;
+}
+
+.tool-icon p {
+	margin-top: 2px;
+	font-size: 14px;
+}
+
+.tool-btn {
+	font-size: 18px;
+	margin: 5px;
+	font-weight: 600;
+	text-rendering: auto;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+}
