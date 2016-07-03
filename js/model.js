@@ -52,6 +52,7 @@
 	var value = model.value = function (){
 		this.properties = {
 			title: 'Value',
+			container: '<p>Hello world</p>',
 			inputs : {
 				ins: {
 	  				label: 'Stdin (:i)',
